@@ -85,4 +85,4 @@ FOREIGN KEY (fk_curso_id)
 REFERENCES curso (id)
 ON DELETE RESTRICT;
 
-ALTER TABLE disciplina ADD carga_horaria varchar(10);
+ALTER TABLE disciplina ADD carga_horaria numeric;
