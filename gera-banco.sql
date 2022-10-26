@@ -84,3 +84,5 @@ ALTEr TABLE pertence ADD CONSTRAINT FK_pertence_2
 FOREIGN KEY (fk_curso_id)
 REFERENCES curso (id)
 ON DELETE RESTRICT;
+
+ALTER TABLE disciplina ADD carga_horaria varchar(10);
