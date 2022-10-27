@@ -13,13 +13,22 @@ Enunciado
 
 *Arquivo texto com as seguintes consultas SQL:
 
-    1 Listar as disciplinas em ordem de código;
-    2 Listar as disciplinas em ordem alfabética;
-    3 Listar o código e o nome das disciplinas que incluem um determinado tópico em sua ementa. O tópico deve ser informado na consulta SQL.  Ex.: No curso de Engenharia de Controle e Automação descrito aqui, o tópico "Sistemas SCADA" faz parte das ementas das disciplinas BLU3403 e BLU3024. A consulta deve considerar parte do assunto. No exemplo anterior, uma pesquisa pelo tópico "SCADA" retornaria as  disciplinas BLU3403 e BLU3024.
-    4 Listar os nomes dos tópicos (itens da ementa) que são tratados em mais de uma disciplina.
-    5 Listar código e o nome das disciplinas que são pré-requisito para uma determinada disciplina, cujo código deve ser informado na consulta SQL.
-    6 Listar os tópicos presentes na ementa de uma disciplina, cujo código deve ser informado na consulta SQL, e que não estão presentes nas ementas das disciplinas equivalentes.
-    7 Listar o código e o nome de todas as disciplinas, bem como a estimativa de quantidade de horas dedicada a cada tópico previsto na ementa. Essa estimativa é obtida dividindo-se a quantidade de horas da disciplina pela quantidade de tópicos previstos na ementa. O resultado deve ser apresentado em ordem decrescente de horas/tópico e em ordem alfabética de disciplina (isto é, disciplinas com o mesmo valor hora/tópico devem aparecer em ordem alfabética). 
-    8 Um mesmo tópico pode fazer parte da ementa de várias disciplinas. Deseja-se evitar, no entanto, que um mesmo tópico seja estudado em mais de uma disciplina de um mesmo curso. Elaborar uma consulta que os cursos em que essa regra não é observada.
-    9 Listar todas as disciplinas que são obrigatórias em algum curso e, ao mesmo tempo, optativas em outro;
-    10 Listar todas as disciplinas que são optativas em um curso e, ao mesmo tempo, obrigatórias em outros.
+    FEITA 1 Listar as disciplinas em ordem de código;
+
+    FEITA  2 Listar as disciplinas em ordem alfabética;
+
+    FEITA  3 Listar o código e o nome das disciplinas que incluem um determinado tópico em sua ementa. O tópico deve ser informado na consulta SQL.  Ex.: No curso de Engenharia de Controle e Automação descrito aqui, o tópico "Sistemas SCADA" faz parte das ementas das disciplinas BLU3403 e BLU3024. A consulta deve considerar parte do assunto. No exemplo anterior, uma pesquisa pelo tópico "SCADA" retornaria as  disciplinas BLU3403 e BLU3024.
+
+    FEITA  4 Listar os nomes dos tópicos (itens da ementa) que são tratados em mais de uma disciplina.
+
+    FEITA 5 Listar código e o nome das disciplinas que são pré-requisito para uma determinada disciplina, cujo código deve ser informado na consulta SQL.
+
+    *6 Listar os tópicos presentes na ementa de uma disciplina, cujo código deve ser informado na consulta SQL, e que não estão presentes nas ementas das disciplinas equivalentes.
+    
+    FEITA  7 Listar o código e o nome de todas as disciplinas, bem como a estimativa de quantidade de horas dedicada a cada tópico previsto na ementa. Essa estimativa é obtida dividindo-se a quantidade de horas da disciplina pela quantidade de tópicos previstos na ementa. O resultado deve ser apresentado em ordem decrescente de horas/tópico e em ordem alfabética de disciplina (isto é, disciplinas com o mesmo valor hora/tópico devem aparecer em ordem alfabética). 
+    
+    *8 Um mesmo tópico pode fazer parte da ementa de várias disciplinas. Deseja-se evitar, no entanto, que um mesmo tópico seja estudado em mais de uma disciplina de um mesmo curso. Elaborar uma consulta que os cursos em que essa regra não é observada.
+
+    *9 Listar todas as disciplinas que são obrigatórias em algum curso e, ao mesmo tempo, optativas em outro;
+
+    *10 Listar todas as disciplinas que são optativas em um curso e, ao mesmo tempo, obrigatórias em outros.
