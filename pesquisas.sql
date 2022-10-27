@@ -19,9 +19,8 @@
 -- having count(*)>1
 
 --5
--- SELECT disciplina.nome FROM disciplina 
+-- SELECT disciplina.nome, disciplina.codigo FROM disciplina 
 -- WHERE id=(SELECT fk_disciplina_id FROM pre_requisito WHERE fk_disciplina_id_ = (SELECT id FROM disciplina WHERE disciplina.codigo = 'BLU6004' LIMIT 1));
-
 
 --6
 
