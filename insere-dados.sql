@@ -38,7 +38,7 @@ insert into ementa (fk_disciplina_id,fk_topicos_id) values (7, 3);
 insert into ementa (fk_disciplina_id,fk_topicos_id) values (6, 7);
 
 --pre_requisito
-insert into pre_requisito (fk_disciplina_id, fk_disciplina_id_) values (1,3)
+insert into pre_requisito (fk_disciplina_id, fk_disciplina_id_) values (1,3);
 
 --equivalente
 insert into equivalente (fk_disciplina_id,fk_disciplina_id_) values (4, 5);

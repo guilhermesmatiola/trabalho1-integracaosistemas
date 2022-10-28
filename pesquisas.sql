@@ -1,5 +1,5 @@
 --1
---select disciplina.id, disciplina.nome, disciplina.codigo from disciplina order by id asc;
+--select disciplina.id, disciplina.nome, disciplina.codigo from disciplina order by disciplina.codigo asc;
 
 --2
 --select disciplina.id, disciplina.nome, disciplina.codigo from disciplina order by disciplina.nome asc;
@@ -31,7 +31,6 @@
 -- select topicos.descricao from topicos
 -- join ementa on topicos.id = ementa.fk_topicos_id
 -- join disciplina on ementa.fk_disciplina_id = disciplina.id
--- --join equivalente on disciplina.id = equivalente.fk_disciplina_id
 -- where disciplina.codigo = 'BLU3706'
 -- ) as r1,
 
@@ -39,7 +38,6 @@
 -- select topicos.descricao from topicos
 -- join ementa on topicos.id = ementa.fk_topicos_id
 -- join disciplina on ementa.fk_disciplina_id = disciplina.id
--- --join equivalente on disciplina.id = equivalente.fk_disciplina_id
 -- where disciplina.nome = (SELECT disciplina.nome FROM disciplina WHERE id=
 -- 						 (SELECT fk_disciplina_id_ 
 -- 						  FROM equivalente 

@@ -40,6 +40,12 @@ CREATe TABLE pertence (
  	fk_curso_id INTEGER
  );
 
+ CREATe TABLE obrigatoria_optativa (
+	fk_disciplina_id INTEGER,
+	fk_curso_id INTEGER,
+	obrigatoria BOOLEAN
+ );
+
 ALTEr TABLE disciplina ADD CONSTRAINT FK_disciplina_2
 FOREIGN KEY (fk_semestre_id)
 REFERENCES semestre (id)
@@ -86,3 +92,13 @@ REFERENCES curso (id)
 ON DELETE RESTRICT;
 
 ALTER TABLE disciplina ADD carga_horaria numeric;
+
+ALTER TABLE obrigatoria_optativa ADD CONSTRAINT FK_obrigatoria_optativa_1
+FOREIGN KEY (fk_disciplina_id)
+REFERENCES disciplina (id)
+ON DELETE SET NULL;
+
+ALTER TABLE obrigatoria_optativa ADD CONSTRAINT FK_obrigatoria_optativa_2
+FOREIGN KEY (fk_curso_id)
+REFERENCES curso (id)
+ON DELETE SET NULL
