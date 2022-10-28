@@ -65,5 +65,5 @@ insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) va
 insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (8,1,TRUE);
 insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (8,2,FALSE);
 
---CALCULO 3 É OPTATIVA EM TEXTIL E OBRIGATORIA EM AUTOMAÇÃO - Para fazer as duas ultimas pesquisas
+--CALCULO 3 É OPTATIVA EM TEXTIL E OBRIGATORIA EM AUTOMAÇÃO, ALGORIMOS É OBRIGATORIA EM AUTOMAÇÃO E OPTATIVA EM TEXTIL - Para fazer as duas ultimas pesquisas
 
