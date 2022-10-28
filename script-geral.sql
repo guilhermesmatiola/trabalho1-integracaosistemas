@@ -101,7 +101,7 @@ ON DELETE SET NULL;
 ALTER TABLE obrigatoria_optativa ADD CONSTRAINT FK_obrigatoria_optativa_2
 FOREIGN KEY (fk_curso_id)
 REFERENCES curso (id)
-ON DELETE SET NULL
+ON DELETE SET NULL;
 
 --semestre
 insert into semestre (id, fase) values (1, 'Primeira');
