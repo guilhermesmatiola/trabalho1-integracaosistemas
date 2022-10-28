@@ -23,6 +23,35 @@
 -- WHERE id=(SELECT fk_disciplina_id FROM pre_requisito WHERE fk_disciplina_id_ = (SELECT id FROM disciplina WHERE disciplina.codigo = 'BLU6004' LIMIT 1));
 
 --6
+-- select descricao from (
+
+-- select  (r1.descricao), count(*) from 
+
+-- (
+-- select topicos.descricao from topicos
+-- join ementa on topicos.id = ementa.fk_topicos_id
+-- join disciplina on ementa.fk_disciplina_id = disciplina.id
+-- --join equivalente on disciplina.id = equivalente.fk_disciplina_id
+-- where disciplina.codigo = 'BLU3706'
+-- ) as r1,
+
+-- (
+-- select topicos.descricao from topicos
+-- join ementa on topicos.id = ementa.fk_topicos_id
+-- join disciplina on ementa.fk_disciplina_id = disciplina.id
+-- --join equivalente on disciplina.id = equivalente.fk_disciplina_id
+-- where disciplina.nome = (SELECT disciplina.nome FROM disciplina WHERE id=
+-- 						 (SELECT fk_disciplina_id_ 
+-- 						  FROM equivalente 
+-- 						  WHERE fk_disciplina_id = 
+-- 						  (SELECT id FROM disciplina WHERE disciplina.codigo = 'BLU3706' LIMIT 1)))
+-- ) as r2
+
+-- where r2.descricao != r1.descricao group by r1.descricao having count(*)>1
+
+-- ) as r3
+
+
 
 --7
 -- select disciplina.codigo, disciplina.nome, (avg (disciplina.carga_horaria)/count(ementa.fk_topicos_id)) as horas_por_topico 
