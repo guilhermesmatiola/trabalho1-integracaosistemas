@@ -12,6 +12,7 @@ insert into disciplina (id,nome,codigo,fk_semestre_id, carga_horaria) values (4,
 insert into disciplina (id,nome,codigo,fk_semestre_id, carga_horaria) values (5, 'Metodologia Eng Têxtil', 'BLU1026', 6, 72);
 insert into disciplina (id,nome,codigo,fk_semestre_id, carga_horaria) values (6, 'Geometria Analitica', 'BLU6905', 1, 72);
 insert into disciplina (id,nome,codigo,fk_semestre_id, carga_horaria) values (7, 'Calculo 3', 'BLU6008', 3, 72);
+insert into disciplina (id,nome,codigo,fk_semestre_id, carga_horaria) values (8, 'Algoritmos', 'BLU3101', 2, 72);
 
 
 --topicos
@@ -44,5 +45,25 @@ insert into pre_requisito (fk_disciplina_id, fk_disciplina_id_) values (6,3);
 --equivalente
 insert into equivalente (fk_disciplina_id,fk_disciplina_id_) values (4, 5);
 
+--curso
+insert into curso (id, nome) values (1, 'Eng de Controle e Automação');
+insert into curso (id, nome) values (2, 'Eng Textil');
 
+--obrigatoria_optativa
+insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (1,1,TRUE);
+insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (1,2,TRUE);
+insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (2,1,TRUE);
+insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (2,2,TRUE);
+insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (3,1,TRUE);
+insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (3,2,TRUE);
+insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (4,1,TRUE);
+insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (5,2,TRUE);
+insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (6,1,TRUE);
+insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (6,2,TRUE);
+insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (7,1,TRUE);
+insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (7,2,FALSE);
+insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (8,1,TRUE);
+insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (8,2,FALSE);
+
+--CALCULO 3 É OPTATIVA EM TEXTIL E OBRIGATORIA EM AUTOMAÇÃO - Para fazer as duas ultimas pesquisas
 

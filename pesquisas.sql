@@ -72,4 +72,22 @@
 
 --9
 
+-- select r1.nome_da_disciplina, r1.nome_do_curso_o_qual_e_obrigatoria, r2.nome_do_curso_onde_e_optativa from
+-- (
+-- select disciplina.nome as nome_da_disciplina, disciplina.codigo, curso.nome as nome_do_curso_o_qual_e_obrigatoria, obrigatoria_optativa.obrigatoria as obrigatoria from disciplina
+-- join obrigatoria_optativa on disciplina.id = obrigatoria_optativa.fk_disciplina_id
+-- join curso on obrigatoria_optativa.fk_curso_id = curso.id
+-- where obrigatoria = true
+-- ) as r1,
+-- (
+-- select disciplina.nome as nome_da_disciplina, disciplina.codigo, curso.nome as nome_do_curso_onde_e_optativa, obrigatoria_optativa.obrigatoria as optativa from disciplina
+-- join obrigatoria_optativa on disciplina.id = obrigatoria_optativa.fk_disciplina_id
+-- join curso on obrigatoria_optativa.fk_curso_id = curso.id
+-- where obrigatoria = false
+-- ) as r2
+-- where 
+-- r1.obrigatoria <> r2.optativa 
+-- and
+-- r1.nome_da_disciplina = r2.nome_da_disciplina
+
 --10
