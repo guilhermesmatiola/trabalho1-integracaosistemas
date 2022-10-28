@@ -19,8 +19,17 @@
 -- having count(*)>1
 
 --5
--- SELECT disciplina.nome, disciplina.codigo FROM disciplina 
--- WHERE id=(SELECT fk_disciplina_id FROM pre_requisito WHERE fk_disciplina_id_ = (SELECT id FROM disciplina WHERE disciplina.codigo = 'BLU6004' LIMIT 1));
+-- select distinct (disciplina.nome) from disciplina
+-- join (
+
+--  select pre_requisito.fk_Disciplina_id_ as Disciplina,
+--  Pre_requisito.fk_Disciplina_id as Pre_requisito,
+--  Disciplina.Nome as Nome_Pre_requisito
+--  from Disciplina, Pre_requisito
+--  where Pre_requisito.fk_Disciplina_id_=(select disciplina.id from disciplina where disciplina.codigo = 'BLU6004')
+	
+-- ) as r1
+-- on r1.pre_requisito = disciplina.id 
 
 --6
 -- select descricao from (
