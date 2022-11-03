@@ -10,7 +10,6 @@ Enunciado
     -Pré-requsitos, sendo que uma disciplina pode ter nenhum pré-requisito, bem como pode ter um ou mais de um pré-requisitos;
     -Disciplinas equivalentes, sendo que uma disciplina pode não ter equivalentes, bem como pode ter um ou mais equivalentes;
     -Curso em que a disciplina é oferecida, sendo que uma disciplina pode ser oferecida em um ou mais cursos e, em cada curso, a disciplina pode ser obrigatória ou optativa.
-
 *Arquivo texto com as seguintes consultas SQL:
 
     FEITA 1 Listar as disciplinas em ordem de código;
@@ -23,12 +22,12 @@ Enunciado
 
     FEITA 5 Listar código e o nome das disciplinas que são pré-requisito para uma determinada disciplina, cujo código deve ser informado na consulta SQL.
 
-    *6 Listar os tópicos presentes na ementa de uma disciplina, cujo código deve ser informado na consulta SQL, e que não estão presentes nas ementas das disciplinas equivalentes.
-    
+    FEITA 6 Listar os tópicos presentes na ementa de uma disciplina, cujo código deve ser informado na consulta SQL, e que não estão presentes nas ementas das disciplinas equivalentes.
+     
     FEITA  7 Listar o código e o nome de todas as disciplinas, bem como a estimativa de quantidade de horas dedicada a cada tópico previsto na ementa. Essa estimativa é obtida dividindo-se a quantidade de horas da disciplina pela quantidade de tópicos previstos na ementa. O resultado deve ser apresentado em ordem decrescente de horas/tópico e em ordem alfabética de disciplina (isto é, disciplinas com o mesmo valor hora/tópico devem aparecer em ordem alfabética). 
     
-    *8 Um mesmo tópico pode fazer parte da ementa de várias disciplinas. Deseja-se evitar, no entanto, que um mesmo tópico seja estudado em mais de uma disciplina de um mesmo curso. Elaborar uma consulta que os cursos em que essa regra não é observada.
+    *8 Um mesmo tópico pod e fazer parte da ementa de várias disciplinas. Deseja-se evitar, no entanto, que um mesmo tópico seja estudado em mais de uma discplina de um mesmo curso. Elaborar uma consulta que os cursos em que essa regra não é observada.
 
-    *9 Listar todas as disciplinas que são obrigatórias em algum curso e, ao mesmo tempo, optativas em outro;
+    FEITA 9 Listar todas as disciplinas que são obrigatórias em algum curso e, ao mesmo tempo, optativas em outro;
 
-    *10 Listar todas as disciplinas que são optativas em um curso e, ao mesmo tempo, obrigatórias em outros.
+    FEITA 10 Listar todas as disciplinas que são optativas em um curso e, ao mesmo tempo, obrigatórias em outros.
