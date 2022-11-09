@@ -118,6 +118,7 @@ insert into disciplina (id,nome,codigo,fk_semestre_id, carga_horaria) values (5,
 insert into disciplina (id,nome,codigo,fk_semestre_id, carga_horaria) values (6, 'Geometria Analitica', 'BLU6905', 1, 72);
 insert into disciplina (id,nome,codigo,fk_semestre_id, carga_horaria) values (7, 'Calculo 3', 'BLU6008', 3, 72);
 insert into disciplina (id,nome,codigo,fk_semestre_id, carga_horaria) values (8, 'Algoritmos', 'BLU3101', 2, 72);
+insert into disciplina (id,nome,codigo,fk_semestre_id, carga_horaria) values (9, 'Tecnologias texteis', 'BLU4202', 6, 108);
 
 
 --topicos
@@ -169,3 +170,5 @@ insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) va
 insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (7,2,FALSE);
 insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (8,1,TRUE);
 insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (8,2,FALSE);
+insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (9,1,FALSE);
+insert into obrigatoria_optativa (fk_disciplina_id, fk_curso_id, obrigatoria) values (9,2,TRUE);
