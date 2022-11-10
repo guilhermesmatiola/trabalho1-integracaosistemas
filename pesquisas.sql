@@ -88,7 +88,7 @@ where obrigatoria = false
 where 
 r1.obrigatoria <> r2.optativa 
 and
-r1.nome_da_disciplina = r2.nome_da_disciplina
+r1.nome_da_disciplina = r2.nome_da_disciplina;
 
 --10
 
@@ -108,4 +108,4 @@ where obrigatoria = true
 where 
 r1.obrigatoria <> r2.optativa 
 and
-r1.nome_da_disciplina = r2.nome_da_disciplina
+r1.nome_da_disciplina = r2.nome_da_disciplina;
