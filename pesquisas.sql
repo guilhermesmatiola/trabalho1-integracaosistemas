@@ -69,6 +69,24 @@ group by disciplina.id
 order by horas_por_topico desc, nome;
 
 --8
+select distinct(r1.nome_curso) from 
+(
+select curso.nome as nome_curso, topicos.descricao as topic from curso
+join pertence on pertence.fk_curso_id = curso.id
+join disciplina on pertence.fk_disciplina_id = disciplina.id
+join ementa on ementa.fk_disciplina_id = disciplina.id
+join topicos on ementa.fk_topicos_id = topicos.id
+)as r1,
+
+(
+select distinct(topicos.descricao) as topic
+from topicos 
+join ementa on topicos.id = ementa.fk_topicos_id
+group by topicos.descricao, ementa.fk_topicos_id, topicos.id
+having count(*)>1
+)as r2
+
+where r1.topic = r2.topic;
 
 --9
 
