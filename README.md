@@ -26,7 +26,7 @@ Enunciado
      
     FEITA  7 Listar o código e o nome de todas as disciplinas, bem como a estimativa de quantidade de horas dedicada a cada tópico previsto na ementa. Essa estimativa é obtida dividindo-se a quantidade de horas da disciplina pela quantidade de tópicos previstos na ementa. O resultado deve ser apresentado em ordem decrescente de horas/tópico e em ordem alfabética de disciplina (isto é, disciplinas com o mesmo valor hora/tópico devem aparecer em ordem alfabética). 
     
-    *8 Um mesmo tópico pod e fazer parte da ementa de várias disciplinas. Deseja-se evitar, no entanto, que um mesmo tópico seja estudado em mais de uma discplina de um mesmo curso. Elaborar uma consulta que os cursos em que essa regra não é observada.
+    FEITA  8 Um mesmo tópico pod e fazer parte da ementa de várias disciplinas. Deseja-se evitar, no entanto, que um mesmo tópico seja estudado em mais de uma discplina de um mesmo curso. Elaborar uma consulta que os cursos em que essa regra não é observada.
 
     FEITA 9 Listar todas as disciplinas que são obrigatórias em algum curso e, ao mesmo tempo, optativas em outro;
 
